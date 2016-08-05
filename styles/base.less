@@ -1,0 +1,208 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #9B9B00;
+}
+
+.text {
+  color: #E8E9E8;
+  background-color: #0F0F0F;
+}
+
+.source.ruby.rails.embedded.html {
+  background-color: #000000;
+}
+
+.text.html.ruby {
+  color: #FFFFFF;
+  background-color: #101010;
+}
+
+.constant.numeric.ruby {
+  color: #CCFF33;
+}
+
+.source.ruby {
+}
+
+.source {
+  color: #E8E9E8;
+  background-color: #000000;
+}
+
+.comment {
+  color: #683E81;
+}
+
+.constant {
+  color: #339999;
+}
+
+.keyword {
+  color: #FF3190;
+}
+
+.keyword.preprocessor {
+  color: #EDF8F9;
+}
+
+.keyword.preprocessor .directive {
+  color: #FFFFFF;
+}
+
+.entity.name.function, .storage.type.function.js {
+  color: #4CCCFF;
+}
+
+.variable.parameter {
+  font-style: italic;
+}
+
+.source .comment.block {
+  color: #772CB7;
+  background-color: #070707;
+}
+
+.variable.other {
+  color: #FFFFFF;
+}
+
+.support.function.activerecord.rails {
+  color: #999966;
+}
+
+.string {
+  color: #71ED15;
+}
+
+.string .constant.character.escape {
+  color: #AAAAAA;
+}
+
+.string.interpolated {
+  color: #000000;
+  background-color: #CCCC33;
+}
+
+.string.regexp {
+  color: #CC8C2B;
+}
+
+.string.literal {
+  color: #CCCC33;
+}
+
+.string.interpolated .constant.character.escape {
+  color: #555555;
+}
+
+.entity.name.class, .support.class.js {
+  text-decoration: underline;
+  color: #E9E3E6;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #E979D0;
+}
+
+.entity.name.tag {
+}
+
+.meta.tag.inline.any.html, .meta.tag.block.any.html {
+  color: #57AAFF;
+}
+
+.entity.other.attribute-name {
+  font-style: italic;
+  color: #99CC99;
+}
+
+.keyword.other {
+  color: #FF2C9F;
+}
+
+.meta.selector.css, .entity.other.attribute-name.pseudo-class.css, .entity.name.tag.wildcard.css, .entity.other.attribute-name.id.css, .entity.other.attribute-name.class.css {
+  color: #57AAFF;
+}
+
+.support.type.property-name.css {
+  color: #999966;
+}
+
+.keyword.other.unit.css, .constant.other.rgb-value.css, .constant.numeric.css {
+  color: #FFFFFF;
+}
+
+.support.function.event-handler.js {
+  color: #FFFFFF;
+}
+
+.keyword.operator.js {
+  color: #FFFFFF;
+}
+
+.keyword.control.js {
+  color: #FF319F;
+}
+
+.support.class.prototype.js {
+  color: #FFFFFF;
+}
+
+.object.property.function.prototype.js {
+  color: #57AAFF;
+}
+
+.storage {
+  color: #FF319F;
+}
